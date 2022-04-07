@@ -1,5 +1,6 @@
 import discord
 import cassiopeia as cass
+from screenshotXvfb import screenshot_op_gg
 
 
 client = discord.Client()
@@ -27,7 +28,7 @@ async def on_message(message):
             string_summs = string_summs + str(i['summonerName']) + "......................." + str(get_champions_name(i['championId'])) + "\n\n"
         av = discord.Embed(title = "Partida en curso: ", color = 7419530, description= string_summs)
         av2 = discord.Embed(title="Partida en curso: ", color=7419530, description=string_summs)
-        file = discord.File("D:\Alvaro\ImagenesChamps\AatroxSquare.webp", filename="AatroxSquare.webp")
+        file = discord.File(screenshot_op_gg(summoner.name), filename="AatroxSquare.webp")
         av2.set_image(url="attachment://AatroxSquare.webp")
         await message.channel.send(file=file, embed=av2)
 
