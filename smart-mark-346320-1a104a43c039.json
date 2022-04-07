@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smart-mark-346320",
+  "private_key_id": "1a104a43c039f9d48cf88596c00c6955625f78c9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrKh6X299/iTCw\nNz8VXjfDjCNJYCaAGnGNiVHsA/Ti5IQTpperHi6LVAnhiKIfEmmIxIazkYzpjcG9\nJYJTuetMa5L2BKYPK5Ip1DvI+7eM2/VnsbnylNCpX7fgpxL0UkHK/FNhVVItMiE5\n3RKbMEWoRJahNI0PY4I4OQjDnOYwQDJXdPIOgwyTwGNYH0O0TNY31qps+SRHlwgo\n57kSfvoWbF3MhHwQMV/VUpuzVrsz5AZp1YEFo/YXdS9Vfqqgc2YGIJQX0XGQqApL\nBhX7uQwhZYfVrW0nQpFwI2wmgcMDLDHJ3VN9ZWswZq9nWCnCQiR61OOx0cZema66\nAtbvJmBPAgMBAAECggEAGhCHaRudMgLLrGyKntqNRlS5mOEF692wVgZyYwI1O984\nMkqHmmdgXMIsNlvD8v8ESBnujeYHsxcYSLvaAp2eCbHwm/sYPdjQ4K1wzzRu/om4\n7z9JWs8zjonvanaMCd2EJwDRQlH8+g9CBQQ3uEnGXw8sGu9G3cWK8mcpAP9hruNl\nGFYoxpn27tjBak0Zzj36zpK682HB8r4uo6KK0HFcLQEU5/WLbc92D3qIlGG0tybK\nNbQabDaEeO34ZbP8dveoIcY3RMhmr0L1JSEIXvPzBX0MGM470tA7tXsvcnbbl/Cx\nmDrmt9rvZqLaTJoHxKZmDylC8kHFyi5HHAcmfyj7UQKBgQDjhED80h4VQB916nr1\n3gw1PGSXcmm6XiAXyr8TXeBsnQRZnzeGevM7ol4Ri0yjqATQLJqDQ/fvnrMUeho/\n9y9sW1yps0HRLVennj3Uqw1E31OxfjH3T+LSAdzIlNduxbJvuTzpbO7+CmLpVjN2\ncNQ3ild6v5n+h/kdW5bIfiRdvwKBgQDAl9I8G/bl3wljLUS0szsDnbRlZRc9XiNe\nXfutRNd7zb4bF2mToZwU059YMXsBDsf3ZrJtPmEgQvjn3Y78VHvCzdXKGxpbLxeM\nQikZVlcjCHRBqe5oHLWNX9zEfTnWEIAyHRkFgvE9gus2vTTrgxqdvhAsbun00vy6\nIVE5XJTBcQKBgQCEObCrPlJNd17RYNzlV48wwVCU0+GudlWgfixeTQjJFtgYXfgf\nKAWEevDAsXxxAI0Lj2CdOTs2/7yEAhKPalEdYFuSJKPzta5jtAurNV4Y0NILLZRM\nbxkbhAmUaSxrLGpvk/BamPysl8y0X2y5QQmU3cnJhOEylEOrVDdlfioUcQKBgCQr\nXxxS1CePn5+0nLajAm5Ha92vApJP36yVUfLUfvONTCqiVv2W2E1BASf7AvLL59oa\nu1+w22THrx88iOHyq9uF9KSkOmrtiSqaMkXD5VF7APpkA5Yh7ibC3h84tWfyaWD/\n/fb/BHdc4vfAyPOCB7mgPEFcAywrg7MhFrQDIxzBAoGABFXPR7qMfu/0kWm9OMiC\nlOvY+O//MvjnG8OJ3dL/Pwet75IuHvH2kCCKeIEflz3n04pkGgyYezhSWb5CSMdt\nP4IbN3X3vnggwYK8dn+tPyha9UovighsGjCik4AHtZmHXDtJuj11kanymehKPNVe\nc0pGbiKGmwJeHCwTdhq/ljs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloudstorage@smart-mark-346320.iam.gserviceaccount.com",
+  "client_id": "105973737569280625444",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloudstorage%40smart-mark-346320.iam.gserviceaccount.com"
+}
