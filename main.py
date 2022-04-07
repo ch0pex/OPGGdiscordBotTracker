@@ -3,7 +3,10 @@ import cassiopeia as cass
 
 
 client = discord.Client()
-cass.set_riot_api_key('RGAPI-ea8329f0-1f2d-465d-81cc-63977e5cbc11')
+cass.set_riot_api_key('RGAPI-99933698-144c-4d9b-81cd-152b7c48065d')
+
+
+
 
 @client.event
 async def on_ready():
@@ -18,13 +21,17 @@ async def on_message(message):
     if message.content.startswith('$current'):
 
         summoner = cass.get_summoner(name=message.content[9:], region='EUW')
-        print(cass.get_champion(0,'EUW'))
         participants = summoner.current_match.to_dict()['participants']
         string_summs = ''
         for i in participants:
             string_summs = string_summs + str(i['summonerName']) + "......................." + str(get_champions_name(i['championId'])) + "\n\n"
         av = discord.Embed(title = "Partida en curso: ", color = 7419530, description= string_summs)
-        await message.channel.send(embed=av)
+        av2 = discord.Embed(title="Partida en curso: ", color=7419530, description=string_summs)
+        file = discord.File("D:\Alvaro\ImagenesChamps\AatroxSquare.webp", filename="AatroxSquare.webp")
+        av2.set_image(url="attachment://AatroxSquare.webp")
+        await message.channel.send(file=file, embed=av2)
+
+
 
 
 def get_champions_name(_id):
