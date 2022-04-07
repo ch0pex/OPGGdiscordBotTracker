@@ -20,16 +20,16 @@ async def on_message(message):
     if message.author == client.user:
         return
     if message.content.startswith('$current'):
-
         summoner = cass.get_summoner(name=message.content[9:], region='EUW')
         participants = summoner.current_match.to_dict()['participants']
         string_summs = ''
         for i in participants:
-            string_summs = string_summs + str(i['summonerName']) + "......................." + str(get_champions_name(i['championId'])) + "\n\n"
-        av = discord.Embed(title = "Partida en curso: ", color = 7419530, description= string_summs)
-        av2 = discord.Embed(title="Partida en curso: ", color=7419530, description=string_summs)
-        file = discord.File(screenshot_op_gg(summoner.name), filename="AatroxSquare.webp")
-        av2.set_image(url="attachment://AatroxSquare.webp")
+            string_summs = string_summs + str(i['summonerName']) + "......................." + str(get_champions_name(i['championId'])) + "\n"
+        
+        screenshot_op_gg(summoner.name)
+	av2 = discord.Embed(title="Partida en curso: ", color=7419530, description=string_summs)
+        file = discord.File("screenshot/{summoner.name}.png", filename="{summoner.name}.png")
+        av2.set_image(url="attachment://{summoner.name}.png")
         await message.channel.send(file=file, embed=av2)
 
 
