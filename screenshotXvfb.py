@@ -4,14 +4,16 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from pyvirtualdisplay import Display
 import time
+from PIL import Image
+
 
 DRIVER_LOCATION = "/usr/bin/chromedriver"
 BINARY_LOCATION = "/usr/bin/google-chrome"
 
 
 DISPLAY_VISIBLE = 0
-DISPLAY_WIDTH = 1000
-DISPLAY_HEIGHT = 1000
+DISPLAY_WIDTH = 1100
+DISPLAY_HEIGHT = 1200
 def screenshot_op_gg(summoner):
 
     # start display
@@ -30,13 +32,15 @@ def screenshot_op_gg(summoner):
     print("current_url", driver.current_url)
     title=driver.title
     print("title: ", title)
-    time.sleep(5)
     # 1.2 take a screenshot
-    filename = f"screenshot/{summoner}.png"
+    time.sleep(4)
+    filename = f"/home/acbsu/screenshots/{summoner}.png"
     driver.save_screenshot(filename)
+    im = Image.open(filename)
+    im_crop = im.crop((19,447,1017,948))
+    im_crop.save(f"/home/acbsu/screenshots/{summoner}.png", quality=100)
     driver.close()
     driver.quit()
     display.stop()
-    return filename
 
 

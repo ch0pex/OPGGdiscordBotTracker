@@ -2,9 +2,10 @@ import discord
 import cassiopeia as cass
 from screenshotXvfb import screenshot_op_gg
 
-
+"""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"""
 client = discord.Client()
 cass.set_riot_api_key('RGAPI-99933698-144c-4d9b-81cd-152b7c48065d')
+
 
 
 
@@ -26,10 +27,10 @@ async def on_message(message):
         for i in participants:
             string_summs = string_summs + str(i['summonerName']) + "......................." + str(get_champions_name(i['championId'])) + "\n"
         
-        screenshot_op_gg(summoner.name)
-	av2 = discord.Embed(title="Partida en curso: ", color=7419530, description=string_summs)
-        file = discord.File("screenshot/{summoner.name}.png", filename="{summoner.name}.png")
-        av2.set_image(url="attachment://{summoner.name}.png")
+        await screenshot_op_gg(summoner.name)
+        av2 = discord.Embed(title="Partida en curso: ", color=7419530, description=string_summs)
+        file = discord.File(f"/home/acbsu/screenshots/{summoner.name}.png", filename=f"{summoner.name}.png")
+        av2.set_image(url=f"attachment://{summoner.name}.png")
         await message.channel.send(file=file, embed=av2)
 
 
