@@ -33,12 +33,12 @@ def screenshot_op_gg(summoner):
     title=driver.title
     print("title: ", title)
     # 1.2 take a screenshot
-    time.sleep(4)
-    filename = f"/home/acbsu/screenshots/{summoner}.png"
+    time.sleep(5)
+    filename = f"/home/acbsu/screenshots/last.png"
     driver.save_screenshot(filename)
     im = Image.open(filename)
-    im_crop = im.crop((19,447,1017,948))
-    im_crop.save(f"/home/acbsu/screenshots/{summoner}.png", quality=100)
+    im_crop = im.crop((19,447,1017,950))
+    im_crop.save(f"/home/acbsu/screenshots/last.png", quality=100)
     driver.close()
     driver.quit()
     display.stop()
