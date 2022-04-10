@@ -14,7 +14,7 @@ BINARY_LOCATION = "/usr/bin/google-chrome"
 DISPLAY_VISIBLE = 0
 DISPLAY_WIDTH = 1100
 DISPLAY_HEIGHT = 1200
-def screenshot_op_gg(summoner):
+async def screenshot_op_gg(summoner):
 
     # start display
     display = Display(visible=DISPLAY_VISIBLE, size=(DISPLAY_WIDTH, DISPLAY_HEIGHT))
@@ -33,7 +33,7 @@ def screenshot_op_gg(summoner):
     title=driver.title
     print("title: ", title)
     # 1.2 take a screenshot
-    time.sleep(5)
+    time.sleep(6)
     filename = f"/home/acbsu/screenshots/last.png"
     driver.save_screenshot(filename)
     im = Image.open(filename)

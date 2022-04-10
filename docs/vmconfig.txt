@@ -2,7 +2,7 @@ sudo apt-get install python3-pip
 sudo apt-get install wget 
 sudo apt-get install -y libjpeg-dev zlib1g-dev
 sudo apt-get install unzip
-pip install -i https://mirrors.aliyun.com/pypi/simple/ Pillow
+pip3 install -i https://mirrors.aliyun.com/pypi/simple/ Pillow
 pip3 install discord 
 pip3 install cassiopeia 
 pip3 install selenium 
