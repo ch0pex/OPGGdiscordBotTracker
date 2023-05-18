@@ -9,7 +9,7 @@ import time
 
 discord.Intents.default()
 client = discord.Client()
-cass.set_riot_api_key('RGAPI-344c33e0-eb22-4dba-862f-33f6e175bb7e')
+cass.set_riot_api_key(RIOT_KEY)
 storage = Storage()
 channel_default = None
 print(storage)
@@ -94,6 +94,6 @@ async def on_message(message):
 
 
 loop_current_game_trigger.start()
-client.run('OTYwNTc2MjQ3NDA5Mjk5NTE2.YkscWA.TX0n3tGhgRL7p4otXkSUSLNu-EI')
+client.run(DISCORD_KEY)
 
 
